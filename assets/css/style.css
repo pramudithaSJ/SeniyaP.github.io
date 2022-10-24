@@ -40,7 +40,15 @@ background-color: #040404;
     background-attachment: fixed;
   }
 }
-
+@media (max-width: 576px) {
+    
+  #myVideo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100vh;
+  }
+}
 a {
   color: #1c9ad0;
   text-decoration: none;
@@ -141,6 +149,26 @@ h6 {
   #header h2 {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  #header .social-links {
+    margin-top: 15px;
+  }
+
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width:576px) {
+  #header h1 {
+    font-size: 20px;
+  }
+
+  #header h2 {
+    font-size: 15px;
+    line-height: 10px;
   }
 
   #header .social-links {
